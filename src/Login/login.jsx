@@ -1,7 +1,6 @@
 import React from 'react'
-import login from './Login/login'
 
-function App() {
+function login() {
   return (
     <div className=' '>
       
@@ -9,4 +8,4 @@ function App() {
   )
 }
 
-export default App
+export default login
