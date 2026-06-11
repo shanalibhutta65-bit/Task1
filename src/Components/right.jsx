@@ -1,9 +1,12 @@
 import { ShapesIcon, ShoppingCart } from 'lucide-react'
+import { UseNavigate } from 'react-router-dom'
 import React from 'react'
 import facebook from '../assets/facebook-svgrepo-com.svg'
 import google from '../assets/google-svgrepo-com.svg'
 
 function Right() {
+ const navigate=UseNavigate();
+
     return (
         <div className=' w-[40%] h-[80%]  flex flex-col items-center justify-evenly  '>
             <div className='  flex items-center gap-2 '>
@@ -19,12 +22,12 @@ function Right() {
                         <p className=' text-gray-400 text-[15px]'>Please login to your account</p>
                     </div>
                     <div className=' flex flex-col  gap-3 pt-2 '>
-                        <input className='  rounded-lg w-99 h-12 bg-gray-200 p-2 ' placeholder='Email address ' type="email" name="" id="" />
-                        <input className=' rounded-lg w-99 h-12 bg-gray-200 p-2 ' placeholder='Password ' type="password" name="" id="" />
+                        <input required className='  rounded-lg w-99 h-12 bg-gray-200 p-2 ' placeholder='Email address ' type="email" name="" id="" />
+                        <input required minLength={4} className=' rounded-lg w-99 h-12 bg-gray-200 p-2 ' placeholder='Password ' type="password" name="" id="" />
                         <p className='  flex justify-end text-[12px]'>Forgot Password?</p>
                     </div>
                     <div className=' '>
-                        <button type='submit' className=' bg-orange-400 w-99 h-12 text-white rounded-lg'>Login</button>
+                        <button onSubmit={()=> navigate('main')} type='submit' className=' bg-orange-400 w-99 h-12 text-white rounded-lg'>Login</button>
                     </div>
                     <div className='  text-center '>
                         --------Or Login with--------
