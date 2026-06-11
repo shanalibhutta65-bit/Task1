@@ -1,10 +1,9 @@
 import React from 'react'
-import Login from './Login/login'
-
+import Sidebar from './Components/sidebar'
 function App() {
   return (
-    <div className=' h-screen w-screen border bg-gray-200 flex items-center justify-center'>
-      <Login/>
+    <div className=' h-screen w-screen '>
+      <Sidebar />
     </div>
   )
 }
