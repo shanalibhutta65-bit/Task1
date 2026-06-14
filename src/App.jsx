@@ -1,9 +1,9 @@
 import React from 'react'
-import Sidebar from './Components/sidebar'
+import Dashboard from './Components/Dashboard'
 function App() {
   return (
     <div className=' h-screen w-screen '>
-      <Sidebar />
+      <Dashboard />
     </div>
   )
 }
