@@ -14,7 +14,7 @@ function Sidebar() {
                 <ChartArea color='white'/>
                 <LucideDollarSign color='white'/>
             </div>
-            <div className='  '>
+            <div className='border   '>
                 <SettingsIcon color='white'/>
             </div>
         </div>
