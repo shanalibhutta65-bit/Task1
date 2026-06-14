@@ -1,11 +1,11 @@
 import { ShapesIcon, ShoppingCart } from 'lucide-react'
-import { UseNavigate } from 'react-router-dom'
+
 import React from 'react'
 import facebook from '../assets/facebook-svgrepo-com.svg'
 import google from '../assets/google-svgrepo-com.svg'
 
 function Right() {
- const navigate=UseNavigate();
+ 
 
     return (
         <div className=' w-[40%] h-[80%]  flex flex-col items-center justify-evenly  '>
@@ -27,7 +27,7 @@ function Right() {
                         <p className='  flex justify-end text-[12px]'>Forgot Password?</p>
                     </div>
                     <div className=' '>
-                        <button onSubmit={()=> navigate('main')} type='submit' className=' bg-orange-400 w-99 h-12 text-white rounded-lg'>Login</button>
+                        <button  type='submit' className=' bg-orange-400 w-99 h-12 text-white rounded-lg'>Login</button>
                     </div>
                     <div className='  text-center '>
                         --------Or Login with--------
