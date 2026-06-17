@@ -1,12 +1,10 @@
 import { ShapesIcon, ShoppingCart } from 'lucide-react'
-
 import React from 'react'
 import facebook from '../assets/facebook-svgrepo-com.svg'
 import google from '../assets/google-svgrepo-com.svg'
 
 function Right() {
  
-
     return (
         <div className=' w-[40%] h-[80%]  flex flex-col items-center justify-evenly  '>
             <div className='  flex items-center gap-2 '>
