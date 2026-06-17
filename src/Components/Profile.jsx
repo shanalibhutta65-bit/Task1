@@ -5,8 +5,8 @@ import List from './list'
 
 function Profile() {
     return (
-        <div className=' w-70 border h-160 flex flex-col bg-purple-100 rounded-xl  '>
-            <div className='  flex items-center justify-end gap-2 mr-3 '>
+        <div className=' w-70 border h-160 flex flex-col bg-purple-100 rounded-xl justify-evenly '>
+            <div className='  flex items-center justify-end gap-3 mr-3 '>
                 <Calendar />
                 <BellCheckIcon />
                 <MessageSquare />
@@ -23,11 +23,12 @@ function Profile() {
 
                 </div>
             </div>
-            <div className=' w-55  h-30 rounded-lg bg-white  flex flex-col gap-1'>
+            <div className=' ml-6 w-55  h-30 rounded-lg bg-white  flex flex-col gap-1'>
                 <p className=' ml-4 mt-3 font-semibold '>Board meeting</p>
                 <p className=' text-sm ml-4 mb-1 font-semibold '>Feb 22 at 6:00 PM</p>
                 <p className=' text-[13px] ml-4'>You have been invited to attend a meeting of the Board Directors.</p>
             </div>
+
         </div>
     )
 }
