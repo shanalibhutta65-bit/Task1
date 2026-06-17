@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Profile from './Components/Profile'
 function App() {
   return (
     <div>
-      12
+      <Profile/>
     </div>
   )
 }
